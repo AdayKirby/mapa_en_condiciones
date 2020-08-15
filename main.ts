@@ -8,6 +8,11 @@ function GameOverLose () {
     music.jumpDown.playUntilDone()
     Player_1.destroy(effects.spray, 500)
 }
+function live2 () {
+    info.changeLifeBy(-1)
+    Player_1.x = 32
+    Player_1.y = 232
+}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.lava, function (sprite, otherSprite) {
     live1()
 })
